@@ -1,0 +1,130 @@
+.bx-next{
+	visibility:hidden;
+}
+
+.bx-next>.bx-next{
+	visibility:visible;
+}
+
+.bx-prev{
+	visibility:hidden;
+}
+
+.bx-prev>.bx-prev{
+	visibility:visible;
+}
+
+#bigLogo{
+	width: 150px;
+	margin-left: -75px;
+	position: absolute;
+	left: 50%;
+	top: 30px;
+}
+
+.slide-caption p{
+	font-size: 20px;
+}
+
+#appSection{
+	margin-top: 50px;
+}
+
+#appSection p{
+	margin-top: 50px;
+
+}
+
+#appSection img{
+	width: 230px;
+	float: left;
+}
+
+#appScreen{
+	margin-top:50px;
+}
+
+.droneApplication{
+	clear: both;
+}
+
+.droneSectionText{
+	padding:10px;
+}
+.droneSectionHeading{
+	font-size:18px;
+	font-family: "Helvetica Neue";
+	margin-top: 50px;
+	text-transform:uppercase;
+	color:#222222;
+}
+
+.droneSectionContent{
+	font-size:14px;
+	font-family: "Helvetica Neue";
+	float:left;
+}
+
+.droneSectionImg{
+	float: left;
+	width: 390px;
+}
+
+#developerEmail{
+	margin-top: 20px;
+}
+
+#developers{
+	font-size:14px;
+	font-family: "Helvetica Neue";
+}
+
+
+#emailModal{
+top:33%;
+background-color: transparent;
+box-shadow: none;
+border:none;
+}
+#emailModal .modal-content {
+background-color: transparent;
+outline: none;
+-webkit-box-shadow: none;
+border: none;
+}
+
+#emailModal .modal-title{
+margin: 0;
+color: #fff;
+color: rgba(255,255,255,0.8);
+font-size: 20px;
+border:none;
+
+}
+#emailModal .modal-header{
+border: none;
+box-shadow: none;
+}
+#emailModal .modal-body{
+border: none;
+font-size: 20px;
+font-family: "Helvetica Neue";
+
+}
+
+#emailModal .modal-body ol{
+	margin:0px;
+}
+
+#emailModal .close{
+font-size: 20px;
+color: #fff;
+opacity: 0.6;
+font-weight: normal;
+font-family: 'HelveticaNeue-UltraLight';
+}
+
+#emailModal .modal-footer{
+border:none;
+background-color: transparent;
+}

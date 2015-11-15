@@ -1,0 +1,338 @@
+@media (max-width: 1024px){
+ 	.nav-collapse  {
+			overflow: hidden;
+			height: 0;
+			background: rgba(0,0,0,0.5);
+			width: 200px;
+			margin-top: 10px;
+		}
+
+	.nav-collapse .nav>li>a {
+			font-size: 14px;
+		}
+	.nav-collapse .nav>li{
+			height: 20px;
+			border: none;
+
+		}
+
+	.nav-collapse #button-outer{
+		display: none;
+		}
+		video{
+		display: none;
+		}
+
+	.main{
+		background:url('../images/atm.jpg');
+		}
+
+	#garuda_cloud{
+		width: 600px;
+		margin-top: 150px;
+		overflow: hidden;
+		position: absolute;
+		left: 50%;
+		margin-left: -300px;
+	}
+
+	.features{
+		display: none;
+	}
+
+
+ }
+
+
+
+@media (min-width:320px) and (max-width:480px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+	#jumbotron-motto-heading {
+		font-size: 20px;
+	}
+
+	#jumbotron-motto{
+		font-size: 16px;
+	}
+	.learn-more {
+		margin-top: 50px;
+		width: 300px;
+		position: absolute;
+		left: 50%;
+		margin-left: -150px;
+	}
+
+
+	.section-text-left p {
+	color: #fff;
+	font-size: 16px;
+	font-family: "proxima";
+	width: 400px;
+	position: absolute;
+	left: 50%;
+	margin-left: -200px;
+	line-height: 22px;
+	}
+
+	#who_we_are_diagram {
+	position: absolute;
+	bottom: 0px;
+	position: absolute;
+	left: 50%;
+	margin-left: -325px;
+	width: 650px;
+	}
+
+	#garuda_cloud{
+		display: none;
+	}
+
+	#sensor_shortcuts, .sensor_info, #shortcuts, .app_info{
+		display: none;
+	}
+
+	.section-content {
+	padding-top: 100px !important;
+	}
+
+	#signup .section-content{
+		padding-top: 10px !important;
+	}
+
+	#contact .section-content{
+		padding-top: 10px !important;
+	}
+
+	#navigation-sticky-wrapper{
+		zoom:0.8;
+	}
+	#signup{
+		height: 622px !important;
+	}
+	#signup-form{
+	width: 200px;
+	position: absolute;
+	left: 50%;
+	margin-left: -100px;
+	margin-top: 100px;
+	}
+
+	#signup-form input[type="text"]{
+	color: #fff;
+	font-size: 16px;
+	font-family: "proxima";
+	border: 3px solid #00bbcc;
+	width: 200px;
+	height: 40px;
+	}
+
+	#signup-form textarea{
+		color: #fff;
+		text-transform: lowercase;
+		font-size: 16px;
+		font-family: "proxima";
+		background: transparent;
+		border: 3px solid #00bbcc;
+		border-radius: 10px;
+		width: 200px;
+	}
+
+	.section-content h1{
+		font-size: 18px !important;
+		width: 300px;
+	}
+
+	.section-content p{
+		font-size: 16px !important;
+		width: 300px;
+		margin-left: -150px;
+	}
+
+	.sensor_info img{
+		display: none;
+	}
+
+	.app_info img{
+		display: none;
+	}
+
+	html{
+		max-width: 480px;
+	}
+
+}
+@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */
+
+
+}
+
+@media (min-width:481px) and (max-width:800px) {
+	#jumbotron-motto-heading {
+		font-size: 25px;
+	}
+
+	video{
+		display: none;
+	}
+
+	.main{
+		background:url('../images/atm.jpg');
+		background-size: cover;
+		width: 100%;
+	}
+
+
+	#bigvideo-footer img{
+		width: 400px;
+		position: absolute;
+		left: 50%;
+		margin-left: -200px;
+		bottom: 0px;
+		}
+	.learn-more {
+		margin-top: 50px;
+		width: 400px;
+		position: absolute;
+		left: 50%;
+		margin-left: -200px;
+	}
+
+	.section-text-left p {
+	color: #fff;
+	font-size: 16px;
+	font-family: "proxima";
+	width: 400px;
+	position: absolute;
+	left: 50%;
+	margin-left: -200px;
+	line-height: 22px;
+	}
+
+	.section-text-left h3{
+		text-align: center;
+	}
+	.vr_main{
+		display: block;
+	}
+
+	#who_we_are_diagram {
+	position: absolute;
+	bottom: 0px;
+	position: absolute;
+	left: 50%;
+	margin-left: -300px;
+	width: 600px;
+	}
+
+	.sensor_info img{
+		display: none;
+	}
+
+	.app_info img{
+		display: none;
+	}
+}
+@media (min-width:600px) and (max-width:800px) {
+	/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+	#garuda_cloud{
+		width: 600px;
+		margin-top: 150px;
+		overflow: hidden;
+		position: absolute;
+		left: 50%;
+		margin-left: -300px;
+	}
+
+	.sensor_info img{
+		display: none;
+	}
+
+	.app_info img{
+		display: none;
+	}
+
+}
+@media (min-width:801px){
+	/* tablet, landscape iPad, lo-res laptops ands desktops */
+	.sensor_info img{
+		display: none;
+	}
+
+	.app_info img{
+		display: none;
+	}
+ }
+
+@media (max-width: :1024px){
+	video{
+		display: none;
+	}
+
+	.main{
+		background:url('../images/atm.jpg');
+		background-size: cover;
+		width: 100%;
+	}
+
+	.vr_main{
+		display: block;
+	}
+
+	.sensor_info img{
+		display: none;
+	}
+
+	.app_info img{
+		display: none;
+	}
+
+}
+
+
+@media (min-width:1025px) and (max-width: 1140px) {
+
+	#navigation-sticky-wrapper{
+		zoom:0.95;
+	}
+	#garuda_cloud{
+		width: 600px;
+		margin-top: 150px;
+		overflow: hidden;
+		position: absolute;
+		left: 50%;
+		margin-left: -300px;
+	}
+
+	.sensor_info img{
+		display: none;
+	}
+
+	.app_info img{
+		display: none;
+	}
+
+
+}
+@media (min-width:1141px) and (max-width: 1280px) {
+	.sensor_info img{
+		display: block;
+	}
+
+	.app_info img{
+		display: block;
+	}
+}
+/* big landscape tablets, laptops, and desktops */
+
+@media (min-width:1281px) { /* hi-res laptops and desktops */
+		#navigation-sticky-wrapper{
+		zoom:1;
+	}
+
+	.sensor_info img{
+		display: block;
+	}
+
+	.app_info img{
+		display: block;
+	}
+ }
