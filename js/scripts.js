@@ -120,128 +120,6 @@ $(document).ready(function(){
 	});
 
 
-
-
-//PrettyPhoto
-	$(function(){
-		$("a[data-gal^='prettyPhoto']").prettyPhoto({
-			  opacity: 0.5,
-			  social_tools: "",
-			  deeplinking: false
-		});
-	});
-
-
-
-//Parallax
-$(window).bind('load', function () {
-	parallaxInit();
-});
-
-	function parallaxInit() {
-		$('#twitter-parallax').parallax("30%", 0.1);
-		$('#quote-parallax').parallax("30%", 0.1);
-		$('#contact-parallax').parallax("30%", 0.1);
-		$('#home').parallax("30%", 0.1);
-		$('#project-header.parallax').parallax("30%", 0.1);
-		/*add as necessary*/
-	}
-
-
-
-
-
-//BxSlider
-$(document).ready(function(){
-
-	var onMobile = false;
-	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) { onMobile = true; }
-
-	$('.fullwidth-slider').bxSlider({
-		mode: "fade",
-		speed: 1000,
-		pager: false,
-		auto:false,
-		controls: true,
-		pause: 3000,
-		prevSelector: '.bx-prev',
-		nextSelector: '.bx-next',
-
-		onSlideBefore: function($slideElement) {
-			($slideElement).find('.slide-caption').fadeOut().animate({top:'100px'},{queue:false, easing: 'easeOutQuad', duration: 550});
-			($slideElement).find('.slide-caption').hide().animate({top:'-100px'});
-		},
-		onSlideAfter: function($slideElement) {
-			($slideElement).find('.slide-caption').fadeIn().animate({top:'0'},{queue:false, easing: 'easeOutQuad', duration: 450});
-		},
-
-	});
-
-	$('.bx-wrapper .bx-controls-direction a').attr('data-500','top:83%; opacity: 0;').attr('data-start','top:50%; opacity: 1;');
-
-
-	if( ( onMobile === false ) && ( $('.parallax-slider').length ) ) {
-
-		skrollr.init({
-			edgeStrategy: 'set',
-			smoothScrolling: false,
-			forceHeight: false
-		});
-
-	}
-
-
-
-
-	$('.twitter-slider').bxSlider({
-		controls: true,
-		pager: false,
-		auto:true,
-		mode:'fade',
-		pause: 3000,
-	});
-
-
-	$('.clients-slider').bxSlider({
-		pagerCustom: '#bx-pager',
-		controls:false,
-	});
-
-	$('.project-slider').bxSlider({
-		controls: true,
-		pager: false,
-		auto:true,
-		pause: 3000,
-		preloadImages:'all',
-
-	});
-
-	$('.blog-slider').bxSlider({
-		controls: true,
-		pager: false,
-		auto:false,
-		pause: 3000,
-		preloadImages: 'visible',
-	});
-
-	$('.text-slide-vertical').bxSlider({
-		controls: false,
-		adaptiveHeight: true,
-		pager: false,
-		auto:true,
-		mode:'fade',
-		pause: 3000,
-	});
-
-
-
-
-
-
-});
-
-
-
 //Navigation Dropdown
 	$('.nav a.colapse-menu1').click(function () { $(".nav-collapse").collapse("hide") });
 
@@ -465,68 +343,7 @@ function initBxModal() {
 	});
 };
 
-
-
-
-//FullScreen Slider
-$(function (){
-	$('#fullscreen-slider').maximage({
-		cycleOptions: {
-			fx: 'fade',
-			speed: 1500, // Has to match the speed for CSS transitions in jQuery.maximage.css (lines 30 - 33)
-			timeout: 5000,
-			prev: '#slider_left',
-			next: '#slider_right',
-			pause: 0,
-			before: function(last,current){
-				jQuery('.slide-content').fadeOut().animate({top:'100px'},{queue:false, easing: 'easeOutQuad', duration: 550});
-				jQuery('.slide-content').fadeOut().animate({top:'-100px'});
-			},
-			after: function(last,current){
-				jQuery('.slide-content').fadeIn().animate({top:'0'},{queue:false, easing: 'easeOutQuad', duration: 450});
-			}
-
-
-
-		},
-
-
-
-		onFirstImageLoaded: function(){
-			jQuery('#cycle-loader').delay(800).hide();
-			jQuery('#fullscreen-slider').delay(800).fadeIn('slow');
-			jQuery('.slide-content').fadeIn().animate({top:'0'});
-			jQuery('.slide-content a').bind('click',function(event){
-				var $anchor = $(this);
-				jQuery('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top -44
-				}, 1500,'easeInOutExpo');
-				event.preventDefault();
-				});
-		}
-	});
-
-	// Helper function to Fill and Center the HTML5 Video
-	jQuery('video,object').maximage('maxcover');
-
-
-
-
-
-	// To show it is dynamic html text
-
-});
-
-
-
-
-
 $(window).load(function() {
-
-
-
-
-
 
 	// Project Page Expander
 
@@ -545,10 +362,6 @@ $(window).load(function() {
 		  $(this).addClass('active');
 
 		  var myUrl = $(this).find('.open-project').attr("href") + " .item-data";
-
-
-
-
 
 		  $('#project-page-data').animate({opacity:0}, 400,function(){
 
@@ -576,11 +389,6 @@ $(window).load(function() {
 									pause: 1,
 								},
 							});
-
-
-
-
-
 
 				});
 
@@ -638,56 +446,7 @@ $(window).load(function() {
 
 
 });
-//
-// var map = new L.mapbox.map('farm', 'garudarobotics.ind9i40p',
-// 		{
-// 			center: new L.LatLng(1.388679, 103.729899),
-// 			zoom: 18}
-// 		);
-// var googleLayer = new L.Google('SATELLITE');
 
-
-/*function init(){
-    map.addLayer(googleLayer);
-
-    var p1 = new L.LatLng(1.38942, 103.72932),
-        p2 = new L.LatLng(1.38926, 103.73045),
-        p3 = new L.LatLng(1.38767, 103.73023),
-        p4 = new L.LatLng(1.38783, 103.72910),
-
-        polygonPoints = [p1, p2, p3, p4];
-
-    var polygon = new L.Polygon(polygonPoints, {
-    	stroke:'#00bccc',
-    	fill:false,
-    });
-
-    map.addLayer(polygon);
-
-
-    var bounds = new L.LatLngBounds(
-            new L.LatLng(1.387621, 103.729092),
-            new L.LatLng(1.389424, 103.730489));
-    var options = {
-            minZoom: 17,
-            maxZoom: 22,
-            opacity: 1.0,
-            tms: false
-    };
-    L.tileLayer('{z}/{x}/{y}.png', options).addTo(map);
-    var tileUrl = '{z}/{x}/{y}.png';
-
-    var magnifyingGlass = L.magnifyingGlass({
-	    zoomOffset: 1,
-	    layers: [
-	      L.tileLayer(tileUrl,options)
-	    ]
-	  });
-
-	  map.addLayer(magnifyingGlass);
-
-
-}		*/
 function activateGarudaMaps(){
     	$('.leaflet-google-layer').fadeTo( "slow" , 0.5, function() {
     // Animation complete.
